@@ -122,10 +122,9 @@ input, select {
     flex-direction: column;
     margin-top: 3vh;
     gap: 1.5vh;
-    padding: 2vh;
     border: 1px solid #0000005d;
     border-radius: 7px;
-    width: 75vh;
+    padding: 2vw;
 
     button {
         background-color: rgb(66, 125, 236);
@@ -143,7 +142,6 @@ input, select {
 }
 
 #campo-edit {
-    width: 77vh;
     z-index: 99;
     position: fixed;
     top: 50%;
@@ -160,16 +158,16 @@ input, select {
 }
 
 @media screen and (max-width:900px) {
-    .form {
-        width: 55vh;
-    }
-    .item-livro {
-        width: 55vh;
-    }
-    #campo-edit {
-        width: 57vh;
+    .form, .item-livro, #campo-edit {
+        margin-left: 3vh;
+        margin-right: 3vh;
     }
     h1 {
-        font-size: 1.95rem !important;
+        font-size: 1.8rem !important;
     }
+}
+
+.conteudo-container {
+    display: grid;
+    justify-content: center;
 }
