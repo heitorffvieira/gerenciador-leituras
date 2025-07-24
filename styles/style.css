@@ -40,11 +40,10 @@ input, select {
     background-color: #fff;
     border: 1px solid #0000005d;
     border-radius: 7px;
-    padding: 2vh;
+    padding: 2vw;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 75vh;
     margin-top: 3vh;
 }
 
@@ -164,6 +163,14 @@ input, select {
     }
     h1 {
         font-size: 1.8rem !important;
+    }
+    .informacoes-livro {
+        div {
+            gap: 2vh;
+        }
+    }
+    .funcoes img {
+        width: 25px;
     }
 }
 
