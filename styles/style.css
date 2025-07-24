@@ -24,6 +24,11 @@ input, select {
     flex: 1;
 }
 
+input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .line-form {
     display: flex;
     justify-content: center;
@@ -183,11 +188,4 @@ input, select {
 .conteudo-container {
     display: grid;
     justify-content: center;
-}
-
-input[type="date"] {
-    width: 100%;
-    min-width: 0;
-    -webkit-appearance: none;
-    appearance: none;
 }
