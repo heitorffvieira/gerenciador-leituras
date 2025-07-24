@@ -89,20 +89,6 @@ input, select {
     transition: all 500ms;
 }
 
-@media screen and (max-width:900px) {
-    .conteudo-container {
-        form {
-            width: 65vh;
-        }
-    }
-    .item-livro {
-        width: 65vh;
-    }
-    #campo-edit {
-        width: 67vh;
-    }
-}
-
 .tooltip-input {
     position: relative;
     display: inline-block;
@@ -171,4 +157,19 @@ input, select {
     grid-template-columns: 1fr 1fr;
     gap: 1vh;
     justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .form {
+        width: 55vh;
+    }
+    .item-livro {
+        width: 55vh;
+    }
+    #campo-edit {
+        width: 57vh;
+    }
+    h1 {
+        font-size: 1.95rem !important;
+    }
 }
