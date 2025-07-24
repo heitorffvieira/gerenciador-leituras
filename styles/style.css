@@ -31,7 +31,8 @@ input, select {
 }
 
 #lista-livros {
-    display: grid;
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 3vh;
 }
@@ -157,9 +158,14 @@ input, select {
 }
 
 @media screen and (max-width:900px) {
-    .form, .item-livro, #campo-edit {
+    .form, .item-livro {
         margin-left: 3vh;
         margin-right: 3vh;
+    }
+    #campo-edit {
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
     }
     h1 {
         font-size: 1.8rem !important;
