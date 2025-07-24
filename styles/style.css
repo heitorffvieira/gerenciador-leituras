@@ -184,3 +184,10 @@ input, select {
     display: grid;
     justify-content: center;
 }
+
+input[type="date"] {
+    width: 100%;
+    min-width: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
