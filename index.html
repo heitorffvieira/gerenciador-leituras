@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Leituras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="conteudo-container" id="conteudo-container">
+
+            <header>
+                <h1 style="font-weight: 600; font-size: 2.2rem;">Gerenciador de Leituras</h1>
+                <p style="font-size: 1.1rem; margin: 1vh 0;">Você leu <span id="contador-livros" style="font-weight: bold;">0</span> de <span id="total-livros">0</span> livros</p>
+            </header>
+
+            <form onsubmit="return adicionarLivro(event)" class="form">
+                <h3 style="text-transform: capitalize; font-weight: 500; font-size: 1.4rem;">Adicionar novo livro</h3>
+                <input type="text" id="titulo-livro" placeholder="Título">
+
+                <div class="line-form">
+                    <input type="text" id="autor-livro" placeholder="Autor">
+                    <input type="text" id="genero-livro" placeholder="Gênero">
+                </div>
+
+                <div class="line-form">
+                    <select id="status-livro">
+                        <option disabled selected>Status</option>
+                        <option value="Para ler">Para ler</option>
+                        <option value="Lendo">Lendo</option>
+                        <option value="Lido">Lido</option>
+                    </select>
+                    <div class="tooltip-input">
+                        <input type="date" id="data-inicio" placeholder="Data de início">
+                        <span class="tooltip-text">Data de início da leitura</span>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn">Adicionar Livro</button>
+            </form>
+
+            <div id="lista-livros"></div>   
+        </div>
+
+            <div id="campo-edit" class="form">
+                <h3 style="text-transform: capitalize; font-weight: 500; font-size: 1.4rem;">editar leitura</h3>
+                <input type="text" id="titulo-edit" placeholder="Título">
+
+                <div class="line-form">
+                    <input type="text" id="autor-edit" placeholder="Autor">
+                    <input type="text" id="genero-edit" placeholder="Gênero">
+                </div>
+
+                <div class="line-form">
+                    <select id="status-edit">
+                        <option disabled selected>Status</option>
+                        <option value="Para ler">Para ler</option>
+                        <option value="Lendo">Lendo</option>
+                        <option value="Lido">Lido</option>
+                    </select>
+                    <div class="tooltip-input">
+                        <input type="date" id="data-edit" placeholder="Data de início">
+                        <span class="tooltip-text">Data de início da leitura</span>
+                    </div>
+
+                </div>
+
+                <div id="btns-editar"></div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

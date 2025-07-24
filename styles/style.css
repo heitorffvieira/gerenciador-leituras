@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #ffffffe8;
+}
+
+.container {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+input, select {
+    padding: 1vh;
+    border-radius: 7px;
+    border: 1px solid #0000005d;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    flex: 1;
+}
+
+.line-form {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+#lista-livros {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.item-livro {
+    background-color: #fff;
+    border: 1px solid #0000005d;
+    border-radius: 7px;
+    padding: 2vh;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vh;
+    margin-top: 3vh;
+}
+
+.informacoes-livro {
+    text-align: left;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    span {
+        color: #000000b7;
+    }
+
+    p {
+        color: rgba(0, 0, 0, 0.993);
+        background-color: rgba(128, 128, 128, 0.11);
+        border-radius: 5px;
+        padding: 3px;
+        width: 3.5rem;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        gap: 4vh;
+        align-items: center;
+    }
+}
+
+.funcoes {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    img:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.btn {
+    transition: all 500ms;
+}
+
+@media screen and (max-width:900px) {
+    .conteudo-container {
+        form {
+            width: 65vh;
+        }
+    }
+    .item-livro {
+        width: 65vh;
+    }
+    #campo-edit {
+        width: 67vh;
+    }
+}
+
+.tooltip-input {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+
+.tooltip-input .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    font-size: 12px;
+    transition: opacity 0.3s;
+}
+
+.tooltip-input:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form {
+    background-color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    gap: 1.5vh;
+    padding: 2vh;
+    border: 1px solid #0000005d;
+    border-radius: 7px;
+    width: 75vh;
+
+    button {
+        background-color: rgb(66, 125, 236);
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        padding: 1vh 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+}
+
+#campo-edit {
+    width: 77vh;
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#btns-editar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    justify-content: center;
+}
