@@ -47,7 +47,7 @@ input[type="date"] {
     background-color: #fff;
     border: 1px solid #0000005d;
     border-radius: 7px;
-    padding: 2vw;
+    padding: 2vh;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -167,6 +167,9 @@ input[type="date"] {
     .form, .item-livro {
         margin-left: 3vh;
         margin-right: 3vh;
+    }
+    .item-livro {
+        padding: 2vw;
     }
     #campo-edit {
         margin-left: 0;
