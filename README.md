@@ -1,6 +1,6 @@
 # 📚 Gerenciador de Leituras
 
-Um aplicativo simples e funcional para gerenciar suas leituras de forma prática e organizada. Com ele, você pode adicionar, editar e excluir livros da sua lista de leitura, além de acompanhar seu progresso com um contador automático.
+Um projeto simples e funcional para gerenciar suas leituras de forma prática e organizada. Com ele, você pode adicionar, editar e excluir livros da sua lista de leitura, além de acompanhar seu progresso com um contador automático.
 
 ## ⚙️ Funcionalidades
 
